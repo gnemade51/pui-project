@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   padding: 20px 40px;
-  background: var(--color-white);
+  background: #252525;
 
   flex-wrap: wrap;
   gap: 20px;
@@ -14,7 +14,7 @@
   font-weight: bold;
   font-family: var(--playfair-display);
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: var(--color-creamson);
 
   cursor: pointer;
 }
@@ -41,7 +41,7 @@
   font-weight: 500;
   font-family: var(--plus-jakarta-sans);
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: var(--color-white);
 
   cursor: pointer;
 }

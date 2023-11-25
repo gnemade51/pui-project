@@ -14,8 +14,9 @@
 }
 
 .hero-image img {
-  width: 120%;
+  width: 90%;
   height: 100%;
+  margin:auto;
   object-fit: contain;
 }
 
@@ -63,7 +64,7 @@
 }
 
 .hero-content-info p {
-  margin: 32px 0 0 32px;
+  margin: 32px 0 0 0px;
 
   font-family: var(--plus-jakarta-sans);
   color: var(--secondary-color);
@@ -72,7 +73,7 @@
 }
 
 .hero-content__buttons {
-  margin: 41px 0 0 41px;
+  margin: 41px 0 0 0px;
 
   display: flex;
   flex-wrap: wrap;

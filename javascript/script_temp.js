@@ -1,9 +1,16 @@
-document.getElementById('next').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').appendChild(lists[0]);
-}
-document.getElementById('prev').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').prepend(lists[lists.length - 1]);
-}
-
+var swiper = new Swiper('.card-slider', {
+    // direction: 'vertical',
+    spaceBetween: 30,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    loop: false,
+    mousewheel:{
+        invert: false,
+    },
+    pagination: {
+        el: '.card_slider_pagination',
+        clickable: true,
+    }
+})

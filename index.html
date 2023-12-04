@@ -23,22 +23,25 @@
         <title>QuickBites</title>
     </head>
     <body>
-        <header>
+      
+        
+        <section class="webGL">
+          <header>
             <nav class="header__nav">
                 <div class="header__logo">
                     <h4>QuickBites</h4>
                     <div class="header__logo-overlay"></div>
                 </div>
                 <ul class="header__menu">
-                    <li>
-                        <a href="#recipies">Recipes</a>
-                    </li>
+                    <!-- <li>
+                        <a href="#recipes">Recipes</a>
+                    </li> -->
                     <li>
                         <a href="#about-us">About Us</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <img src="assets/search.svg" alt="search" />
-                    </li>
+                    </li> -->
                 </ul>
                 <ul class="header__menu-mobile">
                     <li>
@@ -47,8 +50,20 @@
                 </ul>
             </nav>
         </header>
-        
-        
+          <div class="stage">
+            <div class="wrap">
+              <div class="Background">
+                <canvas class="Background-canvas"></canvas>
+              </div>
+            </div>
+            
+            <div class="intro">
+              <h2 class="intro__title">Elevate your kitchen game with hassle-free recipes</h2>
+              <p class="intro__subtitle">Recipes that turn you into a culinary rockstar in minutes!</p>
+              <a href="#recipes"><button class="intro__button">View Recipes</button></a>
+            </div>
+          </div>
+        </section>
 
         <section class="hero">
             <div class="hero-image">
@@ -57,81 +72,91 @@
             </div>
             <div class="hero-content">
                 <div class="hero-content-info">
-                    <h1>Elevate your kitchen game with hassle-free recipes</h1>
-                    <p>Recipes that turn you into a culinary rockstar in minutes!</p>
+                    <h1>Green Cuisine: Verde Harmony Pasta Bowl</h1>
+                    <p>Masterclass by Michelin Star Chef Savani Mengawade.</p>
         
                     <div class="hero-content__buttons">
-                        <button class="hero-content__order-button">View Recipes</button>
+                        <button class="hero-content__order-button">Register Now</button>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="webGL">
-          <div class="stage">
-            <div class="wrap">
-              <div class="Background">
-                <canvas class="Background-canvas"></canvas>
-              </div>
-            </div>
-            <div class="intro">
-              <h2 class="intro__title">Green Cusine</h2>
-              <p class="intro__subtitle">A master class with Michelin star chef Haris Katut</p>
-              <button class="intro__button">Register now</button>
-            </div>
-          </div>
-        </section>
-
-        <section class="popular-foods" id="menu">
-            <h2 class="popular-foods__title">Popular Recipes</h2>
+        <section class="menu" id="recipes">
+            <h2 class="menu_title">Recipes</h2>
       
-            <div class="popular-foods__filters qb__hide-scrollbar">
-              <button class="popular-foods__filter-btn active">All</button>
-              <button class="popular-foods__filter-btn">
-                <!-- <img src="/assets/sushi-9.png" alt="sushi 9" /> -->
-                Snacks
-              </button>
-              <button class="popular-foods__filter-btn">
-                <!-- <img src="/assets/sushi-8.png" alt="sushi 8" /> -->
-                Meals
-              </button>
-              <button class="popular-foods__filter-btn">
-                <!-- <img src="/assets/sushi-6.png" alt="sushi 6" /> -->
-                Desserts
-              </button>
+            <div class="menu_filters qb__hide-scrollbar">
+              <button class="menu_filter-btn active">All</button>
+              <button class="menu_filter-btn">Snacks</button>
+              <button class="menu_filter-btn">Meals</button>
+              <button class="menu_filter-btn">Desserts</button>
             </div>
       
-            <div class="popular-foods__catalogue">
-              <article class="popular-foods__card">
-                <!-- <img class="popular-foods__card-image" src="assets/sushi-12.png" alt="sushi-12" /> -->
-                <h4 class="popular-foods__card-title">Beef Steak</h4>
+            <div class="menu_catalogue">
+              <article class="menu_card">
+                <img class="menu_card-image" src="./assets/garlic_mashed_sw_potatoes.png" alt="Sweet tangy kale salad" />
+                <h4 class="menu_card-title">Garlic Mashed Sweet Potatoes</h4>
       
-                <div class="popular-foods__card-details flex-between">
-                  <div class="popular-foods__card-rating">
+                <div class="menu_card-details">
+                  <div class="menu_card-rating">
                     <img src="assets/star.svg" alt="star"/>
                     <p>4.9</p>
                   </div>
                 </div>
               </article>
       
-              <article class="popular-foods__card active-card">
-                <!-- <img class="popular-foods__card-image" src="assets/sushi-11.png" alt="sushi-11" /> -->
-                <h4 class="popular-foods__card-title">Chicken Bacon Broccoli Alfredo</h4>
+              <a href="./recipe_page.html">
+                <article class="menu_card">
+                  <img class="menu_card-image" src="./assets/hero_plate.svg" alt="Sweet tangy kale salad" />
+                  <h4 class="menu_card-title">Chicken Bacon Broccoli Alfredo</h4>
                 
-                <div class="popular-foods__card-details flex-between">
-                  <div class="popular-foods__card-rating">
+                  <div class="menu_card-details">
+                    <div class="menu_card-rating">
+                      <img src="assets/star.svg" alt="star" />
+                      <p>5.0</p>
+                    </div>
+                  </div>
+                </article>
+              </a>
+      
+              <article class="menu_card">
+                <img class="menu_card-image" src="./assets/hero_plate.svg" alt="Sweet tangy kale salad" />
+                <h4 class="menu_card-title">Sweet and Tangy Kale Salad</h4>
+      
+                <div class="menu_card-details">
+                  <div class="menu_card-rating">
                     <img src="assets/star.svg" alt="star" />
-                    <p>5.0</p>
+                    <p>4.7</p>
                   </div>
                 </div>
               </article>
+              <article class="menu_card">
+                <img class="menu_card-image" src="./assets/hero_plate.svg" alt="Sweet tangy kale salad" />
+                <h4 class="menu_card-title">Sweet and Tangy Kale Salad</h4>
       
-              <article class="popular-foods__card">
-                <!-- <img class="popular-foods__card-image" src="assets/sushi-10.png" alt="sushi-10" /> -->
-                <h4 class="popular-foods__card-title">Sweet and Tangy Kale Salad</h4>
+                <div class="menu_card-details">
+                  <div class="menu_card-rating">
+                    <img src="assets/star.svg" alt="star" />
+                    <p>4.7</p>
+                  </div>
+                </div>
+              </article>
+              <article class="menu_card">
+                <img class="menu_card-image" src="./assets/hero_plate.svg" alt="Sweet tangy kale salad" />
+                <h4 class="menu_card-title">Sweet and Tangy Kale Salad</h4>
       
-                <div class="popular-foods__card-details flex-between">
-                  <div class="popular-foods__card-rating">
+                <div class="menu_card-details">
+                  <div class="menu_card-rating">
+                    <img src="assets/star.svg" alt="star" />
+                    <p>4.7</p>
+                  </div>
+                </div>
+              </article>
+              <article class="menu_card">
+                <img class="menu_card-image" src="./assets/hero_plate.svg" alt="Sweet tangy kale salad" />
+                <h4 class="menu_card-title">Sweet and Tangy Kale Salad</h4>
+      
+                <div class="menu_card-details">
+                  <div class="menu_card-rating">
                     <img src="assets/star.svg" alt="star" />
                     <p>4.7</p>
                   </div>
@@ -139,10 +164,10 @@
               </article>
             </div>
       
-            <button class="popular-foods__button">
+            <!-- <button class="popular-foods__button">
               Explore Food
               <img src="assets/arrow-right.svg"  alt="arrow-right" />
-            </button>
+            </button> -->
           </section>
           
           <section class="deck">
@@ -213,7 +238,7 @@
             </h3>
       
             <ul class="footer__nav">
-              <li><a href="#menu">Recipes</a></li>
+              <li><a href="#recipes">Recipes</a></li>
               <li><a href="#about-us">About Us</a></li>
             </ul>
       

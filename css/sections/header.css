@@ -1,12 +1,25 @@
+header {
+  width: 1280px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Set a transparent background */
+  /* padding: 1em; */
+  text-align: left;
+}
+
 .header__nav {
   display: flex;
   overflow: hidden;
+  width: 1280px;
+  margin: auto;
 }
 
 .header__logo {
   flex: 1;
   display: flex;
-
   position: relative;
   padding: 20px;
 }
@@ -16,7 +29,7 @@
   inset: 0;
   width: 100%;
 
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   z-index: -1;
 }
 
@@ -28,7 +41,7 @@
   text-transform: uppercase;
   font-family: var(--playfair-display);
   color: #fff;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 .header__menu, .header__menu-mobile {
@@ -45,7 +58,8 @@
 .header__menu li {
   font-weight: 500;
   font-family: var(--plus-jakarta-sans);
-  color: var(--secondary-color);
+  color: var(--color-white);
+  /* font-weight: bold; */
   font-size: 16px;
   text-transform: uppercase;
   line-height: 20px;

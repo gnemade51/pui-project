@@ -1,6 +1,6 @@
 .webGL {
 	overflow: hidden;
-	background: var(--primary-color);
+	background: var(--secondary-color);
 }
 
 .stage{
@@ -51,7 +51,7 @@
 	margin: 0;
 	margin-left: -0.1em;
 	letter-spacing: -0.025em;
-	text-shadow: 5px 5px 25px rgba(0,0,0,1);
+	text-shadow: 7px 7px 50px rgba(0,0,0,1);
 }
 
 .intro__subtitle {
@@ -59,7 +59,7 @@
 	color: var(--color-white);
 	font-size: 18px;
 	margin: 2em 0;
-	text-shadow: 5px 5px 25px rgba(0,0,0,1);
+	text-shadow: 7px 7px 70px rgba(0,0,0,1);
 }
 
 .intro__button {

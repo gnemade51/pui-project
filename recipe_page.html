@@ -8,9 +8,10 @@
         <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script> -->
         <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="css/style_temp.css">
+        <link rel="stylesheet" href="css/recipe_page.css">
+        <script defer src="./javascript/data.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script defer src="./javascript/script_temp.js"></script>
+        <script defer src="./javascript/recipe_page.js"></script>
         <title>QuickBites</title>
     </head>
     <body>
@@ -21,212 +22,44 @@
             </div>
         </header>
         <div class="overlay_canvas">
-            <h1 class="recipe_title">CHICKEN BACON<br>BROCCOLI ALFREDO</h1>
+            <h1 class="recipe_title"></h1>
             <div class="ingredient_box">
                 <p id="ingredient_title">Ingredients</p>
-                <div class="ingredientItems">
-                    <p>Cooking Oil.....................1 Cup</p>
-                    <p>Garlic Cloves..............6-7 Cloves</p>
-                    <p>Parsley.......................1/2 Cup</p>
-                    <p>Cooking Oil.....................1 Cup</p>
-                    <p>Cooking Oil.....................1 Cup</p>
-                    <p>Cooking Oil.....................1 Cup</p>
-                    <p>Cooking Oil.....................1 Cup</p>
-                    <p>Cooking Oil.....................1 Cup</p>
-                    <p>Cooking Oil.....................1 Cup</p>
-                    <p>Cooking Oil.....................1 Cup</p>
-                </div>
+                <div class="ingredientItems"></div>
             </div>
             <div class="card-slider">
                  <div class="card-slider_wrapper swiper-wrapper">
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 1: Heat oil in a pan.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_1.png" alt="maximum heat">
+                    <template id="card-template">
+                        <div class="card-slider_item swiper-slide">
+                            <div class="card-slider_step">
+                                <p class="step">Step 1: Heat oil in a pan.</p>
                             </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_1.svg" alt="image of oil added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_1.png" alt="five minutes">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 2: Add diced chicken breast.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_2.png" alt="maximum heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_2.svg" alt="image of chicken added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_2.png" alt="ten minutes">
+                            <div class="gas_container">
+                                <div class="heat">
+                                    <p class="heat_label">Heat</p>
+                                    <img id="heat_image" src="assets/recipe_1/heat_1.png" alt="maximum heat">
+                                </div>
+                                <div class="pan">
+                                    <img id="recipe_image" src="assets/recipe_1/recipe_1.svg" alt="image of oil added to the pan">
+                                </div>
+                                <div class="time">
+                                    <p class="time_label">Time</p>
+                                    <img id="time_image" src="assets/recipe_1/time_1.png" alt="five minutes">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 3: Add salt and pepper.</p>
+                    </template>
+                    
+                    <template id="final-card-template">
+                        <div class="card-slider_item swiper-slide">
+                            <div class="gas_container">
+                                <div class="pan">
+                                    <img id="last_recipe" src="assets/recipe_1/recipe_11.svg" alt="image of spaghetti added to the pan">
+                                </div>
+                            </div>
+                            <h1 class="recipe_end_title">VOILA! YOU ARE DONE</h1>
                         </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_3.png" alt="medium heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_3.svg" alt="image of salt and pepper added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_3.png" alt="ten seconds">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 4: Add two garlic cloves.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_4.png" alt="medium heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_4.svg" alt="image of grated garlic added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_4.png" alt="one minutes">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 5: Add one cup brocolli.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_5.png" alt="medium heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_5.svg" alt="image of borcolli added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_5.png" alt="one minute">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 6: Add two cups of milk.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_6.png" alt="medium heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_6.svg" alt="image of milk added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_6.png" alt="one minute">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 7: Add one cup of parmesan.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_7.png" alt="medium heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_7.svg" alt="image of parmesan added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_7.png" alt="one minute">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 8: Add one-fourth cup of parsley.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_8.png" alt="low heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_8.svg" alt="image of parsley added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_8.png" alt="one minute">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 9: Add four strips of bacon.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_9.png" alt="low heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_9.svg" alt="image of bacon added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_9.png" alt="three minutes">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="card-slider_step">
-                            <p class="step">Step 10: Add half pound spaghetti.</p>
-                        </div>
-                        <div class="gas_container">
-                            <div class="heat">
-                                <p class="heat_label">Heat</p>
-                                <img src="assets/recipe_1/heat_10.png" alt="low heat">
-                            </div>
-                            <div class="pan">
-                                <img src="assets/recipe_1/recipe_10.svg" alt="image of spaghetti added to the pan">
-                            </div>
-                            <div class="time">
-                                <p class="time_label">Time</p>
-                                <img src="assets/recipe_1/time_10.png" alt="three minutes">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-slider_item swiper-slide">
-                        <div class="gas_container">
-                            <div class="pan">
-                                <img id="last_recipe" src="assets/recipe_1/recipe_f.svg" alt="image of spaghetti added to the pan">
-                            </div>
-                        </div>
-                        <h1 class="recipe_end_title">VOILA! YOU ARE DONE</h1>
-                    </div>
+                    </template>
                  </div>
                  <div class="card_slider_pagination"> </div>
             </div>

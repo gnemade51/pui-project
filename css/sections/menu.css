@@ -111,6 +111,7 @@
 
 .menu_card:hover {
   background: #fff;
+  text-decoration: none;
 }
 .menu_card:hover .menu_card-title {
   color: var(--secondary-color);

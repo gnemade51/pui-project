@@ -39,9 +39,11 @@ function addSteps(display_recipe) {
         let recipe = clone.querySelector("#recipe_image");
         step.innerText = display_recipe.steps[i];
         heat.src = display_recipe.heat_imgs[i];
+        heat.alt = display_recipe.heatAltText[i];
         recipe.src = display_recipe.recipe_imgs[i];
+        recipe.alt = display_recipe.imageAltText[i];
         time.src = display_recipe.time_imgs[i];
-
+        time.alt = display_recipe.timeAltText[i];
         
         steps_wrapper.appendChild(clone);
     }
@@ -49,6 +51,7 @@ function addSteps(display_recipe) {
     const last_clone = last_template.content.cloneNode(true);
     let last_recipe = last_clone.querySelector("#last_recipe");
     last_recipe.src = display_recipe.recipe_imgs[numberOfSteps];
+    last_recipe.alt = display_recipe.imageAltText[numberOfSteps];
     steps_wrapper.appendChild(last_clone);
 }
     
@@ -61,15 +64,15 @@ console.log(recipe)
 let display_recipe;
 
 if (recipe === 'chicken_bacon_brocoli_alfredo') {
-    display_recipe = new Recipe(recipe_1.name, recipe_1.ingredients, recipe_1.steps, recipe_1.heat_imgs, recipe_1.recipe_imgs, recipe_1.time_imgs);
+    display_recipe = new Recipe(recipe_1.name, recipe_1.ingredients, recipe_1.steps, recipe_1.heat_imgs, recipe_1.recipe_imgs, recipe_1.time_imgs, recipe_1.imageAltText, recipe_1.heatAltText, recipe_1.heatAltText);
 }
 
 if (recipe === 'garlic_mashed_sweet_potatoes') {
-    display_recipe = new Recipe(recipe_2.name, recipe_2.ingredients, recipe_2.steps, recipe_2.heat_imgs, recipe_2.recipe_imgs, recipe_2.time_imgs);
+    display_recipe = new Recipe(recipe_2.name, recipe_2.ingredients, recipe_2.steps, recipe_2.heat_imgs, recipe_2.recipe_imgs, recipe_2.time_imgs, recipe_2.imageAltText, recipe_2.heatAltText, recipe_2.timeAltText);
 }
 
 if (recipe === 'easy_mac_n_cheese') {
-    display_recipe = new Recipe(recipe_3.name, recipe_3.ingredients, recipe_3.steps, recipe_3.heat_imgs, recipe_3.recipe_imgs, recipe_3.time_imgs);
+    display_recipe = new Recipe(recipe_3.name, recipe_3.ingredients, recipe_3.steps, recipe_3.heat_imgs, recipe_3.recipe_imgs, recipe_3.time_imgs, recipe_3.imageAltText, recipe_3.heatAltText, recipe_3.timeAltText);
 }
 
 //update the title

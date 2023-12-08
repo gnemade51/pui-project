@@ -10,108 +10,144 @@
 @import url("sections/footer.css");
 
 :root {
-    --playfair-display: "Playfair Display", serif;
-    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
-  
-    --primary-color: #8AB641;
-    --secondary-color: #121212;
-  
-    --black-200: #020202;
-    --black-300: #333333;
-    --black-400: #1f1e31;
-    --black-500: #555555;
-    --gray-100: #888888;
-  
-    --color-white: #fff;
-    --color-creamson: #fff0de;
-  }
+	--playfair-display: "Playfair Display", serif;
+	--plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    max-width: 1280px;
-    margin: 0 auto;
-    background-color: var(--color-creamson);
-  }
-  
-  a {
+	--primary-color: #8AB641;
+	--secondary-color: #121212;
+
+	--black-200: #020202;
+	--black-300: #333333;
+	--black-400: #1f1e31;
+	--black-500: #555555;
+	--gray-100: #888888;
+
+	--color-white: #fff;
+	--color-creamson: #fff0de;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+a {
+    color: black;
     text-decoration: none;
-    color: inherit;
-  }
-  
-  
-  .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .qb__hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .qb__hide-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+}
+
+
+body {
+	max-width: 1280px;
+	margin: 0 auto;
+	background-color: var(--color-creamson);
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 
 /* Media Queries */
 @media (max-width: 768px) {
-  /* header section */
-  header {
-    width: 768px;
-    background-color: transparent;
-  }
-  .header__nav {
-    width: 768px;
-    margin: auto;
-    padding: 20px;
-    background-color: transparent;
-  }
-  .header__logo h4 {
-    font-weight: 700;
-    font-size: 24px;
-    text-shadow: 7px 7px 75px rgba(0,0,0,1);
-  }
 
-  /* cooking section */
-  .intro {
-    max-width: 768px;
-  }
+	/* header section */
+	header {
+		width: 768px;
+		background-color: transparent;
+	}
 
-  .intro__title {
-    font-family: var(--playfair-display);
-    color: var(--color-white);
-    font-size: 64px;
-    /* line-height: 0.9; */
-    margin: 0;
-    margin-left: -0.1em;
-    letter-spacing: -0.025em;
-    text-shadow: 7px 7px 50px rgba(0,0,0,1);
-  }
+	.header_nav {
+		width: 768px;
+		margin: auto;
+		padding: 20px;
+		background-color: transparent;
+	}
 
+	.header_logo h4 {
+		font-weight: 700;
+		font-size: 24px;
+		text-shadow: 7px 7px 75px rgba(0, 0, 0, 1);
+	}
+
+	/* cooking section */
+	.intro {
+		max-width: 768px;
+	}
+
+	.intro_title {
+		font-size: 48px;
+	}
+
+	.intro_subtitle {
+		font-size: 16px;
+	}
+
+	.intro_button {
+		font-size: 16px;
+		line-height: 20px;
+		padding: 18px;
+	}
+
+	/* masterclass section */
+	.masterclass {
+		display: flex;
+		min-height: 800px;
+		overflow: hidden;
+	}
+
+	.masterclass_content_info h1 {
+		font-size: 48px;
+	}
+
+	.masterclass_content_info p {
+		font-size: 16px;
+	}
+
+	.masterclass_content_register_button {
+		font-size: 16px;
+		line-height: 20px;
+		padding: 18px;
+	}
+
+	/* menu section */
+	.menu_title {
+		font-size: 48px;
+	}
+
+	.menu_card-title {
+		font-size: 20px;
+	}
+
+	.menu_card-rating p {
+		font-size: 16px;
+	}
+
+	/* slider section */
+	.item .content {
+		left: 30px;
+		width: 300px;
+	}
+
+	.item .name {
+		font-size: 38px;
+	}
+
+	.item .des {
+		font-size: 16px;
+	}
+
+	.item h3 {
+		font-size: 16px;
+	}
 }
-
-
-
-
-
-
-
-
-
-  

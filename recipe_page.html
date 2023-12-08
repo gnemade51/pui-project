@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
-        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script> -->
-        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/recipe_page.css">
+        <!-- Javascripts -->
         <script defer src="./javascript/data.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script defer src="./javascript/recipe_page.js"></script>
+        <!-- Title -->
         <title>QuickBites</title>
     </head>
+
     <body>
         <header class="header">
-            <h4>QuickBites</h4>
+            <a href="./index.html">
+                <h4>QuickBites</h4>
+            </a>
             <div class="link">
-                <a class="back_button" href="./index.html" title="Home"><img class="back_button_image" src="./assets/Back_Button.svg" alt=""></a>
+                <a class="back_button" href="./index.html" title="Home"><img class="back_button_image"
+                        src="./assets/Back_Button.svg" alt=""></a>
             </div>
         </header>
         <div class="overlay_canvas">
@@ -28,7 +33,7 @@
                 <div class="ingredientItems"></div>
             </div>
             <div class="card-slider">
-                 <div class="card-slider_wrapper swiper-wrapper">
+                <div class="card-slider_wrapper swiper-wrapper">
                     <template id="card-template">
                         <div class="card-slider_item swiper-slide">
                             <div class="card-slider_step">
@@ -40,7 +45,8 @@
                                     <img id="heat_image" src="assets/recipe_1/heat_1.png" alt="maximum heat">
                                 </div>
                                 <div class="pan">
-                                    <img id="recipe_image" src="assets/recipe_1/recipe_1.svg" alt="image of oil added to the pan">
+                                    <img id="recipe_image" src="assets/recipe_1/recipe_1.svg"
+                                        alt="image of oil added to the pan">
                                 </div>
                                 <div class="time">
                                     <p class="time_label">Time</p>
@@ -49,28 +55,22 @@
                             </div>
                         </div>
                     </template>
-                    
+
                     <template id="final-card-template">
                         <div class="card-slider_item swiper-slide">
                             <div class="gas_container">
                                 <div class="pan">
-                                    <img id="last_recipe" src="assets/recipe_1/recipe_11.svg" alt="image of spaghetti added to the pan">
+                                    <img id="last_recipe" src="assets/recipe_1/recipe_11.svg"
+                                        alt="image of spaghetti added to the pan">
                                 </div>
                             </div>
                             <h1 class="recipe_end_title">VOILA! YOU ARE DONE</h1>
                         </div>
                     </template>
-                 </div>
-                 <div class="card_slider_pagination"> </div>
+                </div>
+                <div class="card_slider_pagination"> </div>
             </div>
         </div>
-        <!-- jQuery CDN - Slim version (=without AJAX) -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <!-- Popper.JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <!-- jQuery Custom Scroller CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
     </body>
+
 </html>

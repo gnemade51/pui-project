@@ -5,8 +5,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent; /* Set a transparent background */
-  /* padding: 1em; */
+  background-color: transparent;
   text-align: left;
 }
 
@@ -30,31 +29,17 @@ header {
   position: absolute;
   inset: 0;
   width: 100%;
-
-  /* background-color: var(--primary-color); */
   z-index: -1;
 }
 
 .header__logo h4 {
   padding-left: 30px;
-
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   font-family: var(--playfair-display);
   color: #fff;
   /* opacity: 0.8; */
-}
-
-.header__menu, .header__menu-mobile {
-  padding: 20px;
-  flex: 1.236;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 64px;
-
-  list-style: none;
 }
 
 .header__menu li {
@@ -74,9 +59,3 @@ header {
   object-fit: contain;
 }
 
-.header__menu-mobile {
-  display: none;
-  gap: 20px;
-
-  position: relative;
-}

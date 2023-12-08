@@ -83,3 +83,10 @@
 	font-size: 18px;
 	line-height: 23px;
 }
+
+.masterclass_content_register_button:hover,
+.masterclass_content_register_button:focus {
+	color: black;
+	outline: none;
+	background: #adc53b;
+}

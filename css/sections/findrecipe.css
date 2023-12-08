@@ -68,10 +68,9 @@
 	border-radius: 64px;
 	cursor: pointer;
 }
-
-.findrecipe__button img {
-	width: 14px;
-	height: 14px;
-	object-fit: contain;
-	margin-left: 21px;
+.findrecipe__button:hover,
+.findrecipe__button:focus {
+	color: black;
+	outline: none;
+	background: #adc53b;
 }

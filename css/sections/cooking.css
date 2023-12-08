@@ -71,7 +71,7 @@
 
 .intro_button:hover,
 .intro_button:focus {
-	color: #fff;
+	color: black;
 	outline: none;
 	background: #adc53b;
 }

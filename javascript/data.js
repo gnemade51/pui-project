@@ -13,7 +13,6 @@ class Recipe {
 };
 
 // Recipe 1 Data
-
 recipe_1_ingredients = [
     'Cooking Oil.....................1 Cup',
     'Garlic Cloves..............6-7 Cloves',
@@ -96,7 +95,6 @@ for(let i=0; i < 10; i++) {
 };
 
 // Recipe 2 Data
-
 recipe_2_ingredients = [
     'Sweet Potatoes................3 Units',
     'Water..........................3 Cups',
@@ -163,7 +161,6 @@ for(let i=0; i < 7; i++) {
 };
 
 // Recipe 3 Data
-
 recipe_3_ingredients = [
     'Whole Milk.....................5 Cups',
     'Elbow Macaroni..................1 Box',

@@ -1,6 +1,8 @@
+/* importing fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
+/* importing css for individual sections */
 @import url("sections/header.css");
 @import url("sections/cooking.css");
 @import url("sections/masterclass.css");
@@ -9,6 +11,7 @@
 @import url("sections/findrecipe.css");
 @import url("sections/footer.css");
 
+/* creating style variables */
 :root {
 	--playfair-display: "Playfair Display", serif;
 	--plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;

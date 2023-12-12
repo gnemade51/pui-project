@@ -1,14 +1,4 @@
-// class Recipe {
-//     constructor(name, ingredients, steps, heat_imgs, recipe_imgs, time_imgs){
-//         this.name = name;
-//         this.ingredients = ingredients;
-//         this.steps = steps;
-//         this.heat_imgs = heat_imgs;
-//         this.recipe_imgs = recipe_imgs;
-//         this.time_imgs = time_imgs;
-//     }
-// };
-
+//script for Swiper JS
 var swiper = new Swiper('.card-slider', {
     // direction: 'vertical',
     spaceBetween: 30,
@@ -26,6 +16,7 @@ var swiper = new Swiper('.card-slider', {
     }
 })
 
+//function to data for each step
 function addSteps(display_recipe) {
     let numberOfSteps = display_recipe.steps.length;
     const steps_wrapper = document.querySelector('.card-slider_wrapper');
